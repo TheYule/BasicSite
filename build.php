@@ -24,7 +24,7 @@
 
     $items = items("src");
 
-    deleteAll("dist");
+    if (is_dir("dist")) deleteAll("dist");
     mkdir("dist");
 
     echo "Building...\n\n";
